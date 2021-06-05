@@ -21,7 +21,6 @@ for (( i = 0; i < 100; i++ )); do
 
 done
 
-percentage=$(bc<<<"singleH/11")
 echo "Percentage of Heads for Singlet Dictionary: $singleH%"
 echo "Percentage of Tails for Singlet Dictionary: $singleT%"$'\n'
-echo $percentage
+
