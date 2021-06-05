@@ -9,17 +9,18 @@ DT=0
 
 t1=$(( RANDOM%2 ))
 t2=$(( RANDOM%2 ))
+t3=$((RANDOM%2))
 
 for (( i = 0; i < 100; i++ )); do
 
-if [ $t1 -eq 0 ] && [ $t2 -eq 0 ]
+if [ $t1 -eq 0 ] && [ $t2 -eq 0 ] && [ $t3 -eq 0 ]
 then
 	((DH++))
-	doubletD[$i]="HH"
-elif  [ $t1 -eq 1 ] && [ $t2 -eq 1 ]
+	doubletD[$i]="HHH"
+elif  [ $t1 -eq 1 ] && [ $t2 -eq 1 ] && [ $t3 -eq 1 ]
 then
 	((DT++))
-	doubletD[$i]="TT"
+	doubletD[$i]="TTT"
 fi
 done
 
